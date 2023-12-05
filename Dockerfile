@@ -10,8 +10,9 @@ RUN pip install django==3.2
 #Copying the whole files into the container 
 COPY . .
 
-
+#Running commands for this small program.
 RUN python manage.py migrate
+
 
 EXPOSE 8000
 
