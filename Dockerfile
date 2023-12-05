@@ -10,7 +10,7 @@ RUN pip install django==3.2
 #Copying the whole files into the container 
 COPY . .
 
-#Running commands for this small program.
+#Command for migrating the database.
 RUN python manage.py migrate
 
 
